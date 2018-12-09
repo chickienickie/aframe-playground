@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>A-Frame Demo</title>
+  <script src="https://unpkg.com/aframe"></script>
+  <script src="https://unpkg.com/aframe-animation-component/dist/aframe-animation-component.min.js"></script>
+  <link rel= "stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <div class="html-block">
+    <h1> A Frame Demo</h1>
+    <label for="color-picker">Choose Your Color</label>
+    <input id="color-picker">
+  </div>
+
+  <a-scene>
+    <a-entity position="0 1 -2">
+      <a-box id="box" material="color:purple" animation="property:rotation; dur:5000; to:0 360 0; loop: true; easing: linear;"></a-box>
+    </a-entity>
+  </a-scene>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
