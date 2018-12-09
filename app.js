@@ -8,3 +8,9 @@
   })
 
 
+  document.querySelector('#shape-picker').addEventListener('change', (e) => {
+    const shape = e.target.value
+    box.setAttribute('geometry', `primitive:${shape}`)
+    console.log(shape);
+
+  })

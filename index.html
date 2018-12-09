@@ -8,7 +8,7 @@
   <title>A-Frame Demo</title>
   <script src="https://unpkg.com/aframe"></script>
   <script src="https://unpkg.com/aframe-animation-component/dist/aframe-animation-component.min.js"></script>
-  <link rel= "stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
@@ -16,6 +16,17 @@
     <h1> A Frame Demo</h1>
     <label for="color-picker">Choose Your Color</label>
     <input id="color-picker">
+
+    <label for="shape-picker">Choose Your Shape</label>
+    <select id="shape-picker">
+      <option value="box">box</option>
+      <option value="sphere">sphere</option>
+      <option value="circle">circle</option>
+      <option value="cylinder">cylinder</option>
+      <option value="dodecahedron">dodecahedron</option>
+      <option value="torus">torus</option>
+      <option value="torusKnot">torusKnot</option>
+    </select>
   </div>
 
   <a-scene>
